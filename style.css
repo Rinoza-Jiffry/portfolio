@@ -7,24 +7,24 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg: #080810;
-  --bg-alt: #0d0d1a;
-  --surface: #11111f;
-  --card: #15152a;
-  --card-hover: #1c1c35;
-  --border: rgba(255,255,255,0.07);
-  --border-glow: rgba(108,99,255,0.3);
+  --bg: #0a192f;
+  --bg-alt: #0d2137;
+  --surface: #112240;
+  --card: #112240;
+  --card-hover: #1d3461;
+  --border: rgba(100,255,218,0.07);
+  --border-glow: rgba(100,255,218,0.28);
 
-  --primary: #6c63ff;
-  --primary-dark: #5a52d5;
-  --primary-glow: rgba(108,99,255,0.2);
-  --secondary: #00d4ff;
-  --secondary-glow: rgba(0,212,255,0.15);
-  --accent: #ff6b9d;
-  --accent-glow: rgba(255,107,157,0.15);
+  --primary: #64ffda;
+  --primary-dark: #4dd9b8;
+  --primary-glow: rgba(100,255,218,0.12);
+  --secondary: #00b4d8;
+  --secondary-glow: rgba(0,180,216,0.12);
+  --accent: #f72585;
+  --accent-glow: rgba(247,37,133,0.12);
   --gold: #ffd166;
 
-  --text: #e2e8f0;
+  --text: #ccd6f6;
   --text-muted: #8892b0;
   --text-faint: #4a5568;
 
@@ -122,7 +122,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 #navbar.scrolled {
-  background: rgba(8,8,16,0.92);
+  background: rgba(10,25,47,0.94);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow: 0 1px 0 var(--border);
@@ -235,7 +235,7 @@ a { color: inherit; text-decoration: none; }
   font-size: clamp(3rem, 8vw, 6rem);
   font-weight: 800;
   letter-spacing: -0.04em;
-  background: linear-gradient(135deg, #fff 20%, var(--primary) 60%, var(--secondary) 100%);
+  background: linear-gradient(135deg, #fff 10%, var(--primary) 55%, var(--secondary) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -304,14 +304,15 @@ a { color: inherit; text-decoration: none; }
 
 .btn-primary {
   background: var(--primary);
-  color: #fff;
+  color: #0a192f;
+  font-weight: 700;
   box-shadow: 0 4px 20px var(--primary-glow);
 }
 
 .btn-primary:hover {
   background: var(--primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 8px 28px rgba(108,99,255,0.4);
+  box-shadow: 0 8px 28px rgba(100,255,218,0.35);
 }
 
 .btn-ghost {
@@ -381,9 +382,61 @@ a { color: inherit; text-decoration: none; }
 
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 340px;
-  gap: 64px;
+  grid-template-columns: 260px 1fr;
+  gap: 60px;
   align-items: start;
+}
+
+/* ---- Profile Photo ---- */
+.about-photo-wrap {
+  position: relative;
+  width: 260px;
+  flex-shrink: 0;
+}
+
+.about-photo {
+  width: 260px;
+  height: 320px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 20px;
+  border: 2px solid var(--border-glow);
+  box-shadow: 0 0 48px var(--primary-glow), var(--shadow);
+  position: relative;
+  z-index: 1;
+  display: block;
+  transition: filter var(--transition), box-shadow var(--transition);
+}
+
+.about-photo-wrap::after {
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 260px;
+  height: 320px;
+  border: 2px solid var(--primary);
+  border-radius: 20px;
+  opacity: 0.3;
+  z-index: 0;
+  transition: all var(--transition);
+}
+
+.about-photo-wrap:hover::after {
+  top: 8px;
+  left: 8px;
+  opacity: 0.55;
+}
+
+.about-photo-wrap:hover .about-photo {
+  box-shadow: 0 0 64px rgba(100,255,218,0.25), var(--shadow);
+}
+
+/* ---- Right column: text + stats stacked ---- */
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .about-text p {
@@ -415,7 +468,7 @@ a { color: inherit; text-decoration: none; }
 
 .about-stats {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
 
@@ -909,6 +962,29 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.7;
 }
 
+.edu-grad-photo-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+  margin-top: -20px;
+}
+
+.edu-grad-photo {
+  width: 100%;
+  max-width: 540px;
+  height: 300px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: var(--radius);
+  border: 2px solid var(--border-glow);
+  box-shadow: 0 0 48px var(--primary-glow), var(--shadow);
+  transition: box-shadow var(--transition);
+}
+
+.edu-grad-photo:hover {
+  box-shadow: 0 0 72px rgba(100,255,218,0.22), var(--shadow);
+}
+
 /* ===================================
    CERTIFICATIONS
    =================================== */
@@ -1254,7 +1330,7 @@ footer {
   .nav-links {
     position: fixed;
     top: 72px; left: 0; right: 0;
-    background: rgba(8,8,16,0.98);
+    background: rgba(10,25,47,0.98);
     backdrop-filter: blur(20px);
     flex-direction: column;
     gap: 0;
@@ -1279,6 +1355,9 @@ footer {
   .nav-toggle { display: flex; }
 
   .about-grid { grid-template-columns: 1fr; }
+  .about-photo-wrap { width: 100%; max-width: 260px; margin: 0 auto; }
+  .about-photo { width: 100%; height: 280px; }
+  .about-photo-wrap::after { width: 100%; }
   .about-stats { grid-template-columns: repeat(2, 1fr); }
 
   .projects-grid { grid-template-columns: 1fr; }

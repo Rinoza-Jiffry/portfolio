@@ -15,8 +15,8 @@
 
   const PARTICLE_COUNT = 80;
   const MAX_DISTANCE = 160;
-  const PRIMARY   = '108, 99, 255';
-  const SECONDARY = '0, 212, 255';
+  const PRIMARY   = '100, 255, 218';
+  const SECONDARY = '0, 180, 216';
 
   let W, H, particles, animId;
 
@@ -49,9 +49,9 @@
         if (dist < MAX_DISTANCE) {
           const alpha = 1 - dist / MAX_DISTANCE;
           const t = dist / MAX_DISTANCE;
-          const r = Math.round(108 + (0   - 108) * t);
-          const g = Math.round(99  + (212 - 99)  * t);
-          const b = Math.round(255 + (255 - 255)  * t);
+          const r = Math.round(100 + (0   - 100) * t);
+          const g = Math.round(255 + (180 - 255) * t);
+          const b = Math.round(218 + (216 - 218) * t);
           ctx.strokeStyle = `rgba(${r},${g},${b},${alpha * 0.25})`;
           ctx.lineWidth = alpha * 1.2;
           ctx.beginPath();
@@ -284,7 +284,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(108,99,255,0.06) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(100,255,218,0.06) 0%, transparent 70%);
     pointer-events: none;
     z-index: 0;
     transform: translate(-50%,-50%);
