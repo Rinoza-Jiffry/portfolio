@@ -1,0 +1,15 @@
+match_id,date,start_time,expected_end_time,format,teams,venue_name,venue_zone,capacity,crowd_estimate,demand_zone_primary,demand_zones_secondary,post_match_duration_min,year,is_evening_match
+SL_IND_T20_1_2024,2024-07-27,19:30,23:00,T20I,Sri Lanka vs India,"R. Premadasa Stadium, Colombo",Z10,35000,32000,Z10,"Z3,Z4,Z1",60,2024,True
+SL_IND_T20_2_2024,2024-07-28,19:30,23:00,T20I,Sri Lanka vs India,"R. Premadasa Stadium, Colombo",Z10,35000,33000,Z10,"Z3,Z4,Z1",60,2024,True
+SL_IND_T20_3_2024,2024-07-30,19:30,23:00,T20I,Sri Lanka vs India,"R. Premadasa Stadium, Colombo",Z10,35000,35000,Z10,"Z3,Z4,Z1",60,2024,True
+SL_IND_ODI_1_2024,2024-08-02,14:30,22:00,ODI,Sri Lanka vs India,"R. Premadasa Stadium, Colombo",Z10,35000,30000,Z10,"Z3,Z4,Z1",90,2024,False
+SL_IND_ODI_2_2024,2024-08-04,14:30,22:00,ODI,Sri Lanka vs India,"R. Premadasa Stadium, Colombo",Z10,35000,28000,Z10,"Z3,Z4,Z1",90,2024,False
+SL_AFG_T20_1_2024,2024-09-06,19:30,23:00,T20I,Sri Lanka vs Afghanistan,"R. Premadasa Stadium, Colombo",Z10,35000,22000,Z10,"Z3,Z4",60,2024,True
+SL_ENG_TEST_2_2025,2025-01-14,10:00,16:30,Test,Sri Lanka vs England (Day 1),"Sinhalese Sports Club, Colombo",Z4,10000,8500,Z4,"Z3,Z1",45,2025,False
+SL_NZ_T20_1_2025,2025-04-06,19:30,23:00,T20I,Sri Lanka vs New Zealand,"R. Premadasa Stadium, Colombo",Z10,35000,25000,Z10,"Z3,Z4,Z1",60,2025,True
+SL_NZ_T20_2_2025,2025-04-09,19:30,23:00,T20I,Sri Lanka vs New Zealand,"R. Premadasa Stadium, Colombo",Z10,35000,27000,Z10,"Z3,Z4,Z1",60,2025,True
+SL_BAN_T20_1_2025,2025-07-06,19:30,23:00,T20I,Sri Lanka vs Bangladesh,"R. Premadasa Stadium, Colombo",Z10,35000,20000,Z10,"Z3,Z4",60,2025,True
+SL_BAN_ODI_1_2025,2025-07-12,14:30,22:00,ODI,Sri Lanka vs Bangladesh,"R. Premadasa Stadium, Colombo",Z10,35000,22000,Z10,"Z3,Z4,Z1",90,2025,False
+SL_WI_T20_1_2025,2025-09-13,19:30,23:00,T20I,Sri Lanka vs West Indies,"R. Premadasa Stadium, Colombo",Z10,35000,24000,Z10,"Z3,Z4,Z1",60,2025,True
+SL_PAK_TEST_1_2025,2025-07-19,10:00,16:30,Test,Sri Lanka vs Pakistan (Day 1),"Sinhalese Sports Club, Colombo",Z4,10000,9000,Z4,"Z3,Z1",45,2025,False
+SL_DOMESTIC_2025,2025-08-23,10:00,16:30,ODI,Colombo Cricket Club vs Nondescripts CC,"P. Sara Oval, Borella",Z3,10000,5000,Z3,"Z4,Z1",45,2025,False

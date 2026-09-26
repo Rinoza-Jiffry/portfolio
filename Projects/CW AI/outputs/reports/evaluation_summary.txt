@@ -1,0 +1,28 @@
+======================================================================
+EVALUATION SUMMARY — Colombo Ride-Hailing AI
+7COSC013W.1 Foundations of AI, University of Westminster
+======================================================================
+
+SUCCESS CRITERIA (Greedy variant, mean across 10 seeds per type)
+----------------------------------------------------------------------
+  [FAIL] wait_time_reduction_pct              target >= 0.25  |  achieved = 0.1686
+  [PASS] surge_prevention_rate                target >= 0.60  |  achieved = 0.9500
+  [PASS] avg_surge_multiplier                 target <= 1.35  |  achieved = 1.2500
+  [FAIL] gini_coefficient                     target < 0.20  |  achieved = 0.2275
+  [PASS] constraint_satisfaction_rate         target >= 1.00  |  achieved = 1.0000
+  [PASS] computation_time_sec                 target < 5.00  |  achieved = 0.1689
+
+  4/6 criteria met.
+
+COMPARATIVE ANALYSIS (mean across seeds)
+----------------------------------------------------------------------
+Scenario  Variant Surge Prev. Rate Avg Surge Mult. Gini Coeff. Wait Reduction Computation (s) Constraint Sat.
+ Monsoon Baseline             0.0%           1.00×       0.380           0.0%           0.000          100.0%
+ Monsoon   Greedy            95.0%           1.15×       0.373          34.6%           0.036          100.0%
+ Monsoon       Sa            88.0%           1.15×       0.379          -4.8%           0.700          100.0%
+ Cricket Baseline             0.0%           1.00×       0.099           0.0%           0.000          100.0%
+ Cricket   Greedy           100.0%           1.27×       0.099           0.0%           0.001          100.0%
+ Cricket       Sa           100.0%           1.27×       0.099           0.0%           0.003          100.0%
+    Poya Baseline             0.0%           1.00×       0.241           0.0%           0.000          100.0%
+    Poya   Greedy            90.0%           1.33×       0.211          16.0%           0.103          100.0%
+    Poya       Sa            90.0%           1.33×       0.211          16.0%           1.599          100.0%

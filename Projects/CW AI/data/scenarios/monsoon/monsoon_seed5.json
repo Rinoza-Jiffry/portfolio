@@ -1,0 +1,18 @@
+{
+  "scenario_type": "monsoon",
+  "seed": 5,
+  "weather": {
+    "current_rainfall_mm": 9.0,
+    "forecast_1h_mm": 8.5
+  },
+  "poya_day": false,
+  "event": null,
+  "time": {
+    "hour": 14,
+    "minute": 0,
+    "day_of_week": 5
+  },
+  "driver_fleet_file": "driver_fleet_monsoon_seed5.csv",
+  "use_sa": false,
+  "description": "Saturday afternoon, heavy rain"
+}

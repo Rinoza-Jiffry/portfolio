@@ -1,0 +1,19 @@
+{
+  "scenario_type": "poya",
+  "seed": 3,
+  "weather": {
+    "current_rainfall_mm": 0.0,
+    "forecast_1h_mm": 0.0
+  },
+  "poya_day": true,
+  "poya_type": "vesak",
+  "event": null,
+  "time": {
+    "hour": 8,
+    "minute": 30,
+    "day_of_week": 2
+  },
+  "driver_fleet_file": "driver_fleet_poya_seed3.csv",
+  "use_sa": false,
+  "description": "Vesak Poya \u2014 morning procession"
+}

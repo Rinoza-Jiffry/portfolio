@@ -1,0 +1,18 @@
+{
+  "scenario_type": "monsoon",
+  "seed": 9,
+  "weather": {
+    "current_rainfall_mm": 7.2,
+    "forecast_1h_mm": 6.5
+  },
+  "poya_day": false,
+  "event": null,
+  "time": {
+    "hour": 15,
+    "minute": 30,
+    "day_of_week": 2
+  },
+  "driver_fleet_file": "driver_fleet_monsoon_seed9.csv",
+  "use_sa": false,
+  "description": "Wednesday afternoon school-run, heavy rain"
+}

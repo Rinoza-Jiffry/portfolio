@@ -1,0 +1,59 @@
+# ── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+pip-wheel-metadata/
+*.whl
+
+# ── Virtual environments ─────────────────────────────────────────────────────
+venv/
+env/
+.venv/
+.env/
+
+# ── Jupyter ──────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Project-specific: large data files ───────────────────────────────────────
+# OSM graph files (regenerated in Phase 1, can be 100MB+)
+data/raw/colombo_osm/*.graphml
+data/raw/colombo_osm/*.osm
+data/raw/colombo_osm/*.pbf
+
+# Kaggle weather CSV (downloaded manually — see README)
+data/raw/weather_kaggle/*.csv
+
+# Processed outputs (reproducible from source)
+data/processed/travel_time_matrix.csv
+data/processed/historical_weather_clean.csv
+
+# ── DO NOT IGNORE (must be version-controlled) ────────────────────────────────
+# data/raw/events_scraped/fallback_events.json  → needed for offline fallback
+# data/processed/zone_definitions.geojson       → manually curated zone boundaries
+# data/processed/poya_calendar.csv              → curated holiday data
+# data/processed/cricket_fixtures.csv           → curated fixture data
+# data/scenarios/**/*.json                      → scenario configuration files
+
+# ── Logs & cache ─────────────────────────────────────────────────────────────
+logs/
+.cache/
+
+# ── OS & editor ──────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ── Secrets ───────────────────────────────────────────────────────────────────
+.env
+*.key
+secrets.yaml

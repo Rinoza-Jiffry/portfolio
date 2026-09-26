@@ -1,0 +1,10 @@
+Scenario,Variant,Surge Prev. Rate,Avg Surge Mult.,Gini Coeff.,Wait Reduction,Computation (s),Constraint Sat.
+Monsoon,Baseline,0.0%,1.00×,0.380,0.0%,0.000,100.0%
+Monsoon,Greedy,95.0%,1.15×,0.373,34.6%,0.036,100.0%
+Monsoon,Sa,88.0%,1.15×,0.379,-4.8%,0.700,100.0%
+Cricket,Baseline,0.0%,1.00×,0.099,0.0%,0.000,100.0%
+Cricket,Greedy,100.0%,1.27×,0.099,0.0%,0.001,100.0%
+Cricket,Sa,100.0%,1.27×,0.099,0.0%,0.003,100.0%
+Poya,Baseline,0.0%,1.00×,0.241,0.0%,0.000,100.0%
+Poya,Greedy,90.0%,1.33×,0.211,16.0%,0.103,100.0%
+Poya,Sa,90.0%,1.33×,0.211,16.0%,1.599,100.0%

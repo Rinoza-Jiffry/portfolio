@@ -1,0 +1,19 @@
+{
+  "scenario_type": "poya",
+  "seed": 5,
+  "weather": {
+    "current_rainfall_mm": 1.0,
+    "forecast_1h_mm": 1.0
+  },
+  "poya_day": true,
+  "poya_type": "poson",
+  "event": null,
+  "time": {
+    "hour": 7,
+    "minute": 0,
+    "day_of_week": 1
+  },
+  "driver_fleet_file": "driver_fleet_poya_seed5.csv",
+  "use_sa": false,
+  "description": "Poson Poya \u2014 morning, light rain"
+}

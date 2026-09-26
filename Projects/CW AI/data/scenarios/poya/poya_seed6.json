@@ -1,0 +1,19 @@
+{
+  "scenario_type": "poya",
+  "seed": 6,
+  "weather": {
+    "current_rainfall_mm": 5.5,
+    "forecast_1h_mm": 5.5
+  },
+  "poya_day": true,
+  "poya_type": "vesak",
+  "event": null,
+  "time": {
+    "hour": 16,
+    "minute": 0,
+    "day_of_week": 0
+  },
+  "driver_fleet_file": "driver_fleet_poya_seed6.csv",
+  "use_sa": false,
+  "description": "Vesak afternoon + heavy rain (combined cap test)"
+}

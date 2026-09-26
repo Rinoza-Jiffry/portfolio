@@ -1,0 +1,18 @@
+{
+  "scenario_type": "monsoon",
+  "seed": 3,
+  "weather": {
+    "current_rainfall_mm": 8.1,
+    "forecast_1h_mm": 7.0
+  },
+  "poya_day": false,
+  "event": null,
+  "time": {
+    "hour": 17,
+    "minute": 30,
+    "day_of_week": 1
+  },
+  "driver_fleet_file": "driver_fleet_monsoon_seed3.csv",
+  "use_sa": false,
+  "description": "Tuesday evening commute, heavy rain"
+}

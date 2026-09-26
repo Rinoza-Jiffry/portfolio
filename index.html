@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rinoza Jiffry — AI Engineer & Software Engineer. Building intelligent systems with LLMs, multi-agent architectures, and cloud-native solutions." />
+  <title>Rinoza Jiffry | AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">RJ<span class="dot">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#writing">Writing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <canvas id="neural-canvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">Rinoza Jiffry</h1>
+      <div class="hero-title-wrap">
+        <span class="hero-title-prefix">I build</span>
+        <span class="hero-typewriter" id="typewriter"></span>
+        <span class="hero-cursor">|</span>
+      </div>
+      <p class="hero-sub">
+        Software Engineer transitioning into AI Engineering — combining 3+ years of production
+        engineering with hands-on LLM, multi-agent, and geospatial AI work.
+        Currently pursuing MSc in Applied AI at University of Westminster.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+        <a href="https://github.com/Rinoza-Jiffry" target="_blank" rel="noopener" class="btn btn-icon" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/rinoza-jiffry-3277671a4/" target="_blank" rel="noopener" class="btn btn-icon" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </div>
+      <div class="hero-scroll-hint">
+        <span>Scroll to explore</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label">01 / About</div>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a Software Engineer based in <strong>Colombo, Sri Lanka</strong>, with over three years of industry
+            experience building production-grade full-stack systems. My career has spanned fintech, blockchain,
+            cloud applications, and enterprise platforms — giving me a solid engineering foundation now being
+            applied to AI.
+          </p>
+          <p>
+            I'm currently enrolled in the <strong>MSc Applied Artificial Intelligence</strong> programme at the
+            University of Westminster (alongside my BEng Software Engineering, graduating 2025 with Upper Second
+            Honours). I spend my spare time shipping real AI projects — multi-agent systems, LLM pipelines,
+            geospatial simulation — and writing about what I learn.
+          </p>
+          <p>
+            At <strong>Verdentra</strong>, I'm part of the AI Content Team, contributed a voice-integrated web
+            navigation feature at a company hackathon (1st place), and helped build <em>Clarity</em>, an internal
+            AI-powered learning platform for employee skill development.
+          </p>
+          <div class="about-tags">
+            <span class="tag">Multi-Agent Systems</span>
+            <span class="tag">LLM Engineering</span>
+            <span class="tag">Full-Stack</span>
+            <span class="tag">Cloud (Azure / AWS)</span>
+            <span class="tag">Geospatial AI</span>
+            <span class="tag">Blockchain</span>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card reveal">
+            <div class="stat-num">3<span>+</span></div>
+            <div class="stat-label">Years Industry Experience</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-num">6</div>
+            <div class="stat-label">Companies Worked At</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-num">8<span>+</span></div>
+            <div class="stat-label">Projects Shipped</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-num">10<span>+</span></div>
+            <div class="stat-label">Certifications &amp; Badges</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-label">02 / Skills</div>
+      <h2 class="section-title">Technical Stack</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group reveal">
+          <div class="skill-group-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg>
+          </div>
+          <h3>AI &amp; LLM Engineering</h3>
+          <ul class="skill-list">
+            <li><span class="skill-name">LangChain / LangGraph</span><span class="skill-bar"><span style="width:85%"></span></span></li>
+            <li><span class="skill-name">OpenAI API (GPT-4o)</span><span class="skill-bar"><span style="width:90%"></span></span></li>
+            <li><span class="skill-name">Anthropic Claude API</span><span class="skill-bar"><span style="width:88%"></span></span></li>
+            <li><span class="skill-name">Multi-Agent Systems</span><span class="skill-bar"><span style="width:80%"></span></span></li>
+            <li><span class="skill-name">MCP (Model Context Protocol)</span><span class="skill-bar"><span style="width:75%"></span></span></li>
+            <li><span class="skill-name">RAG Pipelines</span><span class="skill-bar"><span style="width:78%"></span></span></li>
+            <li><span class="skill-name">Prompt Engineering</span><span class="skill-bar"><span style="width:90%"></span></span></li>
+          </ul>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="skill-group-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" /></svg>
+          </div>
+          <h3>Languages</h3>
+          <ul class="skill-list">
+            <li><span class="skill-name">Python</span><span class="skill-bar"><span style="width:92%"></span></span></li>
+            <li><span class="skill-name">TypeScript / JavaScript</span><span class="skill-bar"><span style="width:90%"></span></span></li>
+            <li><span class="skill-name">C# / .NET</span><span class="skill-bar"><span style="width:82%"></span></span></li>
+            <li><span class="skill-name">Java</span><span class="skill-bar"><span style="width:75%"></span></span></li>
+            <li><span class="skill-name">Solidity</span><span class="skill-bar"><span style="width:70%"></span></span></li>
+            <li><span class="skill-name">R</span><span class="skill-bar"><span style="width:65%"></span></span></li>
+          </ul>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="skill-group-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" /></svg>
+          </div>
+          <h3>Frontend &amp; Frameworks</h3>
+          <ul class="skill-list">
+            <li><span class="skill-name">React / React 19</span><span class="skill-bar"><span style="width:90%"></span></span></li>
+            <li><span class="skill-name">Angular 19</span><span class="skill-bar"><span style="width:85%"></span></span></li>
+            <li><span class="skill-name">Node.js / Express</span><span class="skill-bar"><span style="width:88%"></span></span></li>
+            <li><span class="skill-name">FastAPI</span><span class="skill-bar"><span style="width:82%"></span></span></li>
+            <li><span class="skill-name">Django / Spring Boot</span><span class="skill-bar"><span style="width:72%"></span></span></li>
+            <li><span class="skill-name">Gradio / Streamlit</span><span class="skill-bar"><span style="width:80%"></span></span></li>
+          </ul>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="skill-group-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z" /></svg>
+          </div>
+          <h3>Cloud &amp; Data</h3>
+          <ul class="skill-list">
+            <li><span class="skill-name">Microsoft Azure</span><span class="skill-bar"><span style="width:85%"></span></span></li>
+            <li><span class="skill-name">AWS</span><span class="skill-bar"><span style="width:70%"></span></span></li>
+            <li><span class="skill-name">Snowflake</span><span class="skill-bar"><span style="width:78%"></span></span></li>
+            <li><span class="skill-name">Docker</span><span class="skill-bar"><span style="width:80%"></span></span></li>
+            <li><span class="skill-name">MySQL / MongoDB</span><span class="skill-bar"><span style="width:85%"></span></span></li>
+            <li><span class="skill-name">Geospatial (osmnx / GeoPandas)</span><span class="skill-bar"><span style="width:75%"></span></span></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-label">03 / Projects</div>
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <!-- ResumeForge -->
+        <article class="project-card reveal featured">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" /></svg>
+            </div>
+            <div class="project-badge">Featured</div>
+          </div>
+          <h3 class="project-title">ResumeForge</h3>
+          <p class="project-desc">
+            AI-powered resume optimizer that rewrites CVs to match job descriptions using streaming Claude API —
+            without fabricating experience. Includes ATS keyword scoring (TF-IDF + bigram detection), real-time
+            diff view to highlight genuinely new content, and DOCX export. File parsing runs entirely in-browser;
+            zero data retained server-side.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight"><span class="hl-icon">✦</span> Streaming Anthropic API (SSE)</div>
+            <div class="highlight"><span class="hl-icon">✦</span> Client-side PDF/DOCX parsing</div>
+            <div class="highlight"><span class="hl-icon">✦</span> TF-IDF ATS keyword scoring</div>
+            <div class="highlight"><span class="hl-icon">✦</span> 4-gram diff highlighting</div>
+          </div>
+          <div class="project-stack">
+            <span>React 19</span><span>Vite 6</span><span>Express</span><span>Claude API</span><span>pdfjs-dist</span><span>Mammoth</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Rinoza-Jiffry/ResumeForge" target="_blank" rel="noopener" class="project-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- Multi-Agent Travel Planner -->
+        <article class="project-card reveal">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z" /></svg>
+            </div>
+          </div>
+          <h3 class="project-title">Multi-Agent Travel Planner</h3>
+          <p class="project-desc">
+            FastAPI backend with specialised hotel and flight booking agents orchestrated via LangChain. Each agent
+            holds its own tools, memory, and decision logic. Includes a Gradio chat interface and MCP server
+            integrations. Uses LangGraph for agent state management and tool calling with GPT-4o-mini.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight"><span class="hl-icon">✦</span> LangGraph agent orchestration</div>
+            <div class="highlight"><span class="hl-icon">✦</span> MCP server integrations</div>
+            <div class="highlight"><span class="hl-icon">✦</span> Specialised hotel &amp; flight agents</div>
+          </div>
+          <div class="project-stack">
+            <span>Python</span><span>FastAPI</span><span>LangChain</span><span>LangGraph</span><span>OpenAI GPT-4o</span><span>Gradio</span><span>MCP</span>
+          </div>
+          <div class="project-links">
+            <span class="project-link-label">Private Repo</span>
+          </div>
+        </article>
+
+        <!-- Colombo Ride-Hailing AI -->
+        <article class="project-card reveal">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" /></svg>
+            </div>
+            <div class="project-badge academic">University</div>
+          </div>
+          <h3 class="project-title">Colombo Ride-Hailing AI</h3>
+          <p class="project-desc">
+            Event-aware proactive driver positioning and dynamic pricing system for a simulated Colombo ride-hailing
+            market. Scrapes live cricket fixtures, Poya calendar events, and real-time weather data. Builds an OSM
+            road network graph, clusters demand zones, runs multi-driver simulation, and evaluates positioning
+            strategies against ground-truth demand curves.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight"><span class="hl-icon">✦</span> OSM road network (osmnx + Dijkstra)</div>
+            <div class="highlight"><span class="hl-icon">✦</span> Event scraping + weather API fusion</div>
+            <div class="highlight"><span class="hl-icon">✦</span> Rule-based + ML demand modelling</div>
+            <div class="highlight"><span class="hl-icon">✦</span> Gini-coefficient fleet evaluation</div>
+          </div>
+          <div class="project-stack">
+            <span>Python</span><span>osmnx</span><span>GeoPandas</span><span>NetworkX</span><span>scikit-learn</span><span>Open-Meteo</span><span>Folium</span>
+          </div>
+          <div class="project-links">
+            <span class="project-link-label">7COSC013W — Foundations of AI</span>
+          </div>
+        </article>
+
+        <!-- French Learning App -->
+        <article class="project-card reveal">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802" /></svg>
+            </div>
+          </div>
+          <h3 class="project-title">French Learning App</h3>
+          <p class="project-desc">
+            AI-powered language learning application with adaptive curriculum, speech recognition, and real-time
+            feedback. Built with a React/TypeScript frontend and a dedicated AI-models backend. Separates concerns
+            cleanly across frontend, backend, AI-models, and database layers.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight"><span class="hl-icon">✦</span> Adaptive lesson generation</div>
+            <div class="highlight"><span class="hl-icon">✦</span> AI-powered speech feedback</div>
+            <div class="highlight"><span class="hl-icon">✦</span> Layered microservice architecture</div>
+          </div>
+          <div class="project-stack">
+            <span>React</span><span>TypeScript</span><span>Vite</span><span>AI Models API</span><span>Node.js</span>
+          </div>
+          <div class="project-links">
+            <span class="project-link-label">Private Repo</span>
+          </div>
+        </article>
+
+        <!-- Clarity (Hackathon) -->
+        <article class="project-card reveal">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" /></svg>
+            </div>
+            <div class="project-badge winner">🏆 1st Place</div>
+          </div>
+          <h3 class="project-title">Clarity — AI Learning Platform</h3>
+          <p class="project-desc">
+            Internal AI-powered platform built during the VerdentraX Hackathon (1st place). Employees describe
+            their role and interests; generative AI creates personalised learning content, tracks progress via
+            dashboards, and delivers smart recommendations. Designed to make skill development continuous and
+            measurable across the organisation.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight"><span class="hl-icon">✦</span> Generative AI personalisation</div>
+            <div class="highlight"><span class="hl-icon">✦</span> Skill gap identification</div>
+            <div class="highlight"><span class="hl-icon">✦</span> Growth dashboards</div>
+          </div>
+          <div class="project-stack">
+            <span>Generative AI</span><span>Azure AI</span><span>React</span><span>.NET</span>
+          </div>
+          <div class="project-links">
+            <span class="project-link-label">Internal Product — VerdentraX 2024</span>
+          </div>
+        </article>
+
+        <!-- cHub -->
+        <article class="project-card reveal">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" /></svg>
+            </div>
+          </div>
+          <h3 class="project-title">cHub — Integration Platform</h3>
+          <p class="project-desc">
+            Cloud-native application to simplify integration between regulated ATS, exchanges, crossing networks,
+            and custodians. Built while at Conceptvines, enabling seamless multi-party communication with strong
+            compliance requirements in the financial sector.
+          </p>
+          <div class="project-stack">
+            <span>Cloud-Native</span><span>Financial APIs</span><span>Enterprise Integration</span>
+          </div>
+          <div class="project-links">
+            <span class="project-link-label">Conceptvines — 2022/23</span>
+          </div>
+        </article>
+
+        <!-- Vinsights -->
+        <article class="project-card reveal featured">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" /></svg>
+            </div>
+            <div class="project-badge">Verdentra</div>
+          </div>
+          <h3 class="project-title">Vinsights — Engineering Metrics Platform</h3>
+          <p class="project-desc">
+            Production engineering metrics platform built at Verdentra to track and improve delivery excellence across teams.
+            Surfaces actionable data on On-Time Delivery, Committed vs Delivered ratios, PR review quality, and a composite
+            Engineering Rigor Index (ERI). Metrics roll up from Project → Account → Portfolio level for executive visibility.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight"><span class="hl-icon">✦</span> Engineering Rigor Index (ERI) scoring engine</div>
+            <div class="highlight"><span class="hl-icon">✦</span> Azure SQL + EF Core data layer with Docker dev setup</div>
+            <div class="highlight"><span class="hl-icon">✦</span> SSO (OAuth 2.0 / OIDC) via Microsoft Entra ID</div>
+            <div class="highlight"><span class="hl-icon">✦</span> Playwright E2E + xUnit API test coverage</div>
+          </div>
+          <div class="project-stack">
+            <span>.NET 10</span><span>React 19</span><span>TypeScript</span><span>Azure SQL</span><span>Docker</span><span>OAuth 2.0</span><span>Playwright</span>
+          </div>
+          <div class="project-links">
+            <span class="project-link-label">Verdentra — Internal Platform</span>
+          </div>
+        </article>
+
+        <!-- Definity Test Automation -->
+        <article class="project-card reveal">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" /></svg>
+            </div>
+            <div class="project-badge">Verdentra</div>
+          </div>
+          <h3 class="project-title">Definity — Full Test Automation Suite</h3>
+          <p class="project-desc">
+            End-to-end test automation framework for the Definity multi-tenant platform. Covers API, security,
+            and browser tests across core and per-tenant instances using a structured Playwright + TypeScript setup.
+            Runs nightly and per-deploy via Azure Pipelines with Allure reporting and headless OTP-bypass login flows.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight"><span class="hl-icon">✦</span> Multi-tenant Playwright project generation</div>
+            <div class="highlight"><span class="hl-icon">✦</span> API + security + E2E coverage in one repo</div>
+            <div class="highlight"><span class="hl-icon">✦</span> Azure Pipelines CI (nightly + per-deploy)</div>
+            <div class="highlight"><span class="hl-icon">✦</span> Page Object Model with Kendo Grid helpers</div>
+          </div>
+          <div class="project-stack">
+            <span>Playwright</span><span>TypeScript</span><span>Azure Pipelines</span><span>Allure</span><span>Zod</span><span>Docker</span>
+          </div>
+          <div class="project-links">
+            <span class="project-link-label">Verdentra — Production Automation</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-label">04 / Experience</div>
+      <h2 class="section-title">Work History</h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-date">June 2024 – Present</span>
+              <span class="timeline-badge current">Current</span>
+            </div>
+            <h3 class="timeline-role">Software Engineer</h3>
+            <p class="timeline-company">Verdentra</p>
+            <ul class="timeline-bullets">
+              <li>Implemented end-to-end K-1 tax compliance features — data remapping, UI enhancements — with Angular 19 and .NET Core</li>
+              <li>Report migration and stored procedure development using Snowflake and .NET</li>
+              <li>Technical Blog Writer and member of the AI Content Team</li>
+              <li>Built a voice-integrated web navigation feature at the internal hackathon (1st place)</li>
+              <li>Co-developed <em>Clarity</em>, an AI-powered employee skill-development platform</li>
+              <li>Hosted university technical sessions and organised CSR initiatives</li>
+            </ul>
+            <div class="timeline-stack">
+              <span>Angular 19</span><span>.NET Core</span><span>Snowflake</span><span>Azure AI</span><span>Generative AI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-date">Apr 2023 – Jun 2024</span>
+            </div>
+            <h3 class="timeline-role">Associate Software Engineer</h3>
+            <p class="timeline-company">Verdentra</p>
+            <ul class="timeline-bullets">
+              <li>Built employee recognition web application using React, Azure Functions, Node.js, and MySQL</li>
+              <li>Developed a task tracking app with .NET, React JS, and Azure AI integration</li>
+            </ul>
+            <div class="timeline-stack">
+              <span>React</span><span>Azure Functions</span><span>Node.js</span><span>MySQL</span><span>Azure AI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-date">Dec 2022 – Apr 2023</span>
+            </div>
+            <h3 class="timeline-role">Associate Software Engineer</h3>
+            <p class="timeline-company">Conceptvines</p>
+            <ul class="timeline-bullets">
+              <li>Developed <em>cHub</em>, a cloud-native application for seamless integration across ATS, exchanges, crossing networks, and custodians in the financial sector</li>
+            </ul>
+            <div class="timeline-stack">
+              <span>Cloud-Native</span><span>Enterprise APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-date">Jun 2022 – Dec 2022</span>
+            </div>
+            <h3 class="timeline-role">Software Support Engineer</h3>
+            <p class="timeline-company">Spades</p>
+            <ul class="timeline-bullets">
+              <li>Resolved complex technical tickets with data-driven, architecturally sound solutions</li>
+              <li>Assessed emerging technologies and provided strategic recommendations</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-date">Feb 2022 – Nov 2022</span>
+            </div>
+            <h3 class="timeline-role">Junior Web Developer</h3>
+            <p class="timeline-company">Rananjaya Holdings</p>
+            <ul class="timeline-bullets">
+              <li>Developed notable websites in Sri Lanka with strong UI/UX design focus</li>
+            </ul>
+            <div class="timeline-stack">
+              <span>UI/UX</span><span>Web Development</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-date">Jul 2021 – Jun 2022</span>
+            </div>
+            <h3 class="timeline-role">Trainee Web / App &amp; Blockchain Developer</h3>
+            <p class="timeline-company">GlidAR (Pvt) Ltd</p>
+            <ul class="timeline-bullets">
+              <li>Built NFT Minting DApp (thrash.netlify.app)</li>
+              <li>Contributed to prominent websites: Nawaloka, Upali's, Fourcoast, Flights Destination</li>
+              <li>Smart Contract development using Solidity on Ethereum</li>
+            </ul>
+            <div class="timeline-stack">
+              <span>Solidity</span><span>Ethereum</span><span>Web3.js</span><span>React</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-label">05 / Education</div>
+      <h2 class="section-title">Academic Background</h2>
+      <div class="edu-grid">
+
+        <div class="edu-card reveal">
+          <div class="edu-badge">MSc</div>
+          <div class="edu-body">
+            <h3>MSc Applied Artificial Intelligence</h3>
+            <p class="edu-school">University of Westminster</p>
+            <p class="edu-dates">Jan 2025 – Present</p>
+            <p class="edu-note">Focused on machine learning, deep learning, natural language processing, and AI system design.</p>
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-badge">BEng</div>
+          <div class="edu-body">
+            <h3>BEng (Hons) Software Engineering</h3>
+            <p class="edu-school">University of Westminster</p>
+            <p class="edu-dates">Jan 2020 – Aug 2025</p>
+            <p class="edu-note">Upper Second Class Honours. Modules in Foundations of AI, Data Structures, Cloud Computing, and Software Architecture.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section id="certifications" class="section section-alt">
+    <div class="container">
+      <div class="section-label">06 / Certifications</div>
+      <h2 class="section-title">Credentials &amp; Awards</h2>
+      <div class="certs-header-row">
+        <a href="https://www.credly.com/users/rinoza-jiffry.982c1e23/badges" target="_blank" rel="noopener" class="credly-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" /></svg>
+          View all badges on Credly
+        </a>
+      </div>
+      <div class="certs-grid">
+
+        <!-- Google Cloud Arcade Champion -->
+        <div class="cert-card reveal highlight-card arcade-card">
+          <div class="cert-logo arcade">🕹</div>
+          <div class="cert-body">
+            <h4>Google Cloud Arcade Champion</h4>
+            <p>Google Cloud Skills Boost — Arcade Programme. Earned skill badges across Generative AI, Cloud Architecture, and Data &amp; ML tracks.</p>
+            <a href="https://www.skills.google/profile/badges?credential_type=skill_badge" target="_blank" rel="noopener" class="cert-inline-link">View Google profile →</a>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-logo azure">Az</div>
+          <div class="cert-body">
+            <h4>Azure AI Fundamentals</h4>
+            <p>AI-900 — Microsoft Certified</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-logo azure">Az</div>
+          <div class="cert-body">
+            <h4>Azure Data Fundamentals</h4>
+            <p>DP-900 — Microsoft Certified</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-logo azure">Az</div>
+          <div class="cert-body">
+            <h4>Azure Fundamentals</h4>
+            <p>AZ-900 — Microsoft Certified</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-logo oci">OCI</div>
+          <div class="cert-body">
+            <h4>OCI AI Foundations Associate</h4>
+            <p>Oracle Certified — 2025</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal highlight-card">
+          <div class="cert-logo trophy">🏆</div>
+          <div class="cert-body">
+            <h4>VerdentraX Hackathon — 1st Place</h4>
+            <p>Clarity: AI-powered employee learning platform</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-logo badge">🎓</div>
+          <div class="cert-body">
+            <h4>Data Literacy — Statistics Foundations</h4>
+            <a href="https://openbadgepassport.com/app/profile/341929" target="_blank" rel="noopener" class="cert-inline-link">University of Westminster Open Badge →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WRITING ===== -->
+  <section id="writing" class="section">
+    <div class="container">
+      <div class="section-label">07 / Writing</div>
+      <h2 class="section-title">Writing &amp; Publications</h2>
+      <p class="section-sub">Technical articles on AI engineering, ML theory, and cloud architecture — published on LinkedIn Pulse, the Verdentra blog, and ResearchGate.</p>
+      <div class="writing-grid">
+
+        <a href="https://www.linkedin.com/pulse/5-ai-agent-types-powering-every-product-you-use-today-rinoza-jiffry-vj07c/" target="_blank" rel="noopener" class="writing-card reveal">
+          <div class="writing-type">AI Engineering · LinkedIn Pulse</div>
+          <h3>5 AI Agent Types Powering Every Product You Use Today</h3>
+          <p>Breaks down five agent architectures — Simple Reflex, Model-Based, Goal-Based, Utility-Based, and Learning Agents — with real product examples and the PEAS design framework.</p>
+          <span class="writing-cta">Read on LinkedIn →</span>
+        </a>
+
+        <a href="https://www.verdentra.com/article/mcp-acp-a2a-building-smarter-safer-and-more-collaborative-ai-systems/" target="_blank" rel="noopener" class="writing-card writing-cta-card reveal">
+          <div class="writing-type">AI Systems · Verdentra Blog</div>
+          <h3>MCP, ACP &amp; A2A: Building Smarter, Safer, and More Collaborative AI Systems</h3>
+          <p>Explores how three complementary protocols — Model Context Protocol, Agent Communication Protocol, and Agent-to-Agent — enable secure enterprise multi-agent architectures in healthcare, banking, and legal workflows.</p>
+          <span class="writing-cta">Read on Verdentra →</span>
+        </a>
+
+        <a href="https://www.linkedin.com/pulse/does-pca-increase-bias-what-nobody-tells-you-reduction-rinoza-jiffry-4xo1c/" target="_blank" rel="noopener" class="writing-card reveal">
+          <div class="writing-type">ML Theory · LinkedIn Pulse</div>
+          <h3>Does PCA Increase Bias? What Nobody Tells You About Dimensionality Reduction</h3>
+          <p>Proves that applying PCA by default can introduce irreducible bias when signal lives in low-variance dimensions — demonstrated with the Wisconsin Breast Cancer dataset and the spectral bias term β⊥ᵀΣβ⊥.</p>
+          <span class="writing-cta">Read on LinkedIn →</span>
+        </a>
+
+        <a href="https://www.linkedin.com/pulse/ols-vs-ridge-lasso-practical-regularization-study-ames-rinoza-jiffry-xba0c/" target="_blank" rel="noopener" class="writing-card reveal">
+          <div class="writing-type">ML / Statistics · LinkedIn Pulse</div>
+          <h3>OLS vs Ridge vs Lasso: A Practical Regularization Study on the Ames Housing Dataset</h3>
+          <p>Hands-on comparison of three regression approaches using 38 numerical features. Reveals severe multicollinearity via VIF analysis and demonstrates how L1/L2 regularization adds stability — not just accuracy.</p>
+          <span class="writing-cta">Read on LinkedIn →</span>
+        </a>
+
+        <a href="https://www.linkedin.com/pulse/how-snowflakes-multi-cluster-shared-data-architecture-rinoza-jiffry-lizic/" target="_blank" rel="noopener" class="writing-card reveal">
+          <div class="writing-type">Cloud / Data · LinkedIn Pulse</div>
+          <h3>How Snowflake's Multi-Cluster Shared Data Architecture Enables Scalability</h3>
+          <p>Deep dive into Snowflake's separated storage and compute model — independent virtual warehouses, elastic scaling, and cross-cloud data access — illustrated with real-world concurrency scenarios.</p>
+          <span class="writing-cta">Read on LinkedIn →</span>
+        </a>
+
+        <a href="https://www.researchgate.net/publication/350974886-Success-of-a-mobile-app" target="_blank" rel="noopener" class="writing-card reveal">
+          <div class="writing-type">Research Paper · ResearchGate</div>
+          <h3>Success of a Mobile App</h3>
+          <p>Published research analysing the factors that drive mobile application success — covering UX design principles, engagement metrics, and market positioning.</p>
+          <span class="writing-cta">Read on ResearchGate →</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LEADERSHIP ===== -->
+  <section id="leadership" class="section section-alt">
+    <div class="container">
+      <div class="section-label">08 / Leadership</div>
+      <h2 class="section-title">Leadership &amp; Community</h2>
+      <div class="leadership-grid">
+
+        <div class="leadership-card reveal">
+          <div class="leadership-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z" /></svg>
+          </div>
+          <h3>IT Consultant</h3>
+          <p class="leadership-org">Capsaicinaz LM Foundation</p>
+          <p class="leadership-date">Nov 2022 – Present</p>
+        </div>
+
+        <div class="leadership-card reveal">
+          <div class="leadership-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253M3 12a8.96 8.96 0 01.284-2.253" /></svg>
+          </div>
+          <h3>Various Positions</h3>
+          <p class="leadership-org">AIESEC</p>
+          <p class="leadership-date">Germany · Azerbaijan · Bangladesh · Sri Lanka · Denmark</p>
+        </div>
+
+        <div class="leadership-card reveal">
+          <div class="leadership-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" /></svg>
+          </div>
+          <h3>Zone Coordinator</h3>
+          <p class="leadership-org">Leo Club</p>
+          <p class="leadership-date">Jun 2023 – Aug 2024</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-label">09 / Contact</div>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="section-sub">I'm open to AI Engineering roles, research collaborations, and technical conversations. Reach out through any of the channels below.</p>
+      <div class="contact-grid">
+
+        <a href="mailto:rinozajiffry56@gmail.com" class="contact-card reveal">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
+          </div>
+          <h3>Email</h3>
+          <p>rinozajiffry56@gmail.com</p>
+        </a>
+
+        <a href="https://www.linkedin.com/in/rinoza-jiffry-3277671a4/" target="_blank" rel="noopener" class="contact-card reveal">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <h3>LinkedIn</h3>
+          <p>rinoza-jiffry-3277671a4</p>
+        </a>
+
+        <a href="https://github.com/Rinoza-Jiffry" target="_blank" rel="noopener" class="contact-card reveal">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </div>
+          <h3>GitHub</h3>
+          <p>Rinoza-Jiffry</p>
+        </a>
+
+        <a href="tel:+94764699064" class="contact-card reveal">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" /></svg>
+          </div>
+          <h3>Phone</h3>
+          <p>+94 764 699 064</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container footer-inner">
+      <p class="footer-name">Rinoza Jiffry</p>
+      <div class="footer-links">
+        <a href="https://www.credly.com/users/rinoza-jiffry.982c1e23/badges" target="_blank" rel="noopener">Credly</a>
+        <a href="https://www.skills.google/profile/badges?credential_type=skill_badge" target="_blank" rel="noopener">Google Skills</a>
+        <a href="https://openbadgepassport.com/app/profile/341929" target="_blank" rel="noopener">Open Badge</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

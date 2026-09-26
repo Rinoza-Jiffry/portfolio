@@ -1,0 +1,18 @@
+{
+  "scenario_type": "monsoon",
+  "seed": 4,
+  "weather": {
+    "current_rainfall_mm": 2.8,
+    "forecast_1h_mm": 2.5
+  },
+  "poya_day": false,
+  "event": null,
+  "time": {
+    "hour": 9,
+    "minute": 0,
+    "day_of_week": 3
+  },
+  "driver_fleet_file": "driver_fleet_monsoon_seed4.csv",
+  "use_sa": false,
+  "description": "Thursday morning, light monsoon rain"
+}

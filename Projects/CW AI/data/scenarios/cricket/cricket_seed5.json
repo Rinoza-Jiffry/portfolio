@@ -1,0 +1,23 @@
+{
+  "scenario_type": "cricket",
+  "seed": 5,
+  "weather": {
+    "current_rainfall_mm": 0.0,
+    "forecast_1h_mm": 0.0
+  },
+  "poya_day": false,
+  "event": {
+    "event_type": "cricket",
+    "venue_zone": "Z10",
+    "minutes_to_event_end": 20,
+    "crowd_estimate": 32000
+  },
+  "time": {
+    "hour": 18,
+    "minute": 0,
+    "day_of_week": 1
+  },
+  "driver_fleet_file": "driver_fleet_cricket_seed5.csv",
+  "use_sa": false,
+  "description": "ODI at Premadasa \u2014 end"
+}

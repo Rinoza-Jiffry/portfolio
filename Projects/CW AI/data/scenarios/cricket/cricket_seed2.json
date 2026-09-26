@@ -1,0 +1,23 @@
+{
+  "scenario_type": "cricket",
+  "seed": 2,
+  "weather": {
+    "current_rainfall_mm": 0.0,
+    "forecast_1h_mm": 0.0
+  },
+  "poya_day": false,
+  "event": {
+    "event_type": "cricket",
+    "venue_zone": "Z4",
+    "minutes_to_event_end": 20,
+    "crowd_estimate": 10000
+  },
+  "time": {
+    "hour": 16,
+    "minute": 0,
+    "day_of_week": 2
+  },
+  "driver_fleet_file": "driver_fleet_cricket_seed2.csv",
+  "use_sa": false,
+  "description": "Test at SSC \u2014 post-match"
+}
